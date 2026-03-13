@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 
 import { useState } from "react"
@@ -82,10 +81,10 @@ export default function Page() {
       {/* Hero / Main Content */}
       <section className="relative z-10 flex-1 flex flex-col items-center px-4 py-8">
         <div className="w-full max-w-[420px] cyber-panel rounded-3xl p-6 relative">
-
+          
           {/* Internal watermark pattern - simulated */}
           <div className="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none select-none">
-            <span className="text-8xl font-black rotate-[-20deg]">IMEI</span>
+             <span className="text-8xl font-black rotate-[-20deg]">IMEI</span>
           </div>
 
           {/* Title Area */}
@@ -111,7 +110,7 @@ export default function Page() {
               placeholder="351200719051592"
               className="flex-1 p-4 bg-transparent outline-none font-mono text-sm tracking-widest placeholder-white/20"
             />
-            <button
+            <button 
               onClick={verifyIMEI}
               disabled={loading}
               className="btn-cyber px-5 text-xs font-bold uppercase tracking-widest flex items-center gap-2"
@@ -123,20 +122,20 @@ export default function Page() {
 
           {/* Table / List */}
           <div className="space-y-3">
-            <InfoRow icon={<Smartphone size={16} />} label="Marque" value={data?.brand} />
-            <InfoRow icon={<Cpu size={16} />} label="Modèle" value={data?.model} />
-            <InfoRow icon={<ShieldCheck size={16} />} label="Statut Douane" value={data?.status} />
-            <InfoRow icon={<Calendar size={16} />} label="Date de Redevance" value={data?.redevance} />
-            <InfoRow icon={<ShieldCheck size={16} />} label="Homologation Modèle" value={data?.homologation} />
+             <InfoRow icon={<Smartphone size={16}/>} label="Marque" value={data?.brand} />
+             <InfoRow icon={<Cpu size={16}/>} label="Modèle" value={data?.model} />
+             <InfoRow icon={<ShieldCheck size={16}/>} label="Statut Douane" value={data?.status} />
+             <InfoRow icon={<Calendar size={16}/>} label="Date de Redevance" value={data?.redevance} />
+             <InfoRow icon={<ShieldCheck size={16}/>} label="Homologation Modèle" value={data?.homologation} />
           </div>
         </div>
 
         {/* Floating Phone Illustration */}
         <div className="mt-8 relative z-10">
-          <img
-            src="/phone.png"
-            alt="phone"
-            className="w-40 h-auto opacity-80"
+          <img 
+            src="/phone.png" 
+            alt="phone" 
+            className="w-40 h-auto opacity-80" 
             style={{ filter: 'drop-shadow(0 0 20px rgba(0, 242, 255, 0.4))' }}
           />
         </div>

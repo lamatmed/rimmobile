@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "PORTAL PUBLIC - Vérification IMEI",
+  title: "PORTAL - Vérification IMEI",
   description: "Portail de vérification IMEI haute performance",
 };
 
